@@ -17,14 +17,26 @@ nav:
   fixed: false
 
 menu:
-  首页: / || fas fa-home
+  # 首页: / || fas fa-home
   时间轴: /archives/ || fas fa-archive
   分类: /categories/ || fas fa-folder-open
   标签: /tags/ || fas fa-tags
+  # 列表|| fas fa-list
+  友链: /link/ || fas fa-link
 
 # --------------------------------------
 # Code Blocks Settings
 # --------------------------------------
+# 代码高亮
+highlight_theme: mac
+# 复制
+highlight_copy: true
+# 代码展开
+highlight_shrink: true #代码框不展开，需点击 '>' 打开
+# 代码换行
+code_word_wrap: true
+# 代码块高度
+highlight_height_limit: 200 # unit: px
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
@@ -55,7 +67,7 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/FengXue.jpg
   effect: false
 
 # Disable all banner images
@@ -65,7 +77,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: /img/bg.png
+index_img: 
 
 # The banner image of archive page
 archive_img:
@@ -91,7 +103,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background:
+background: /img/bg.png
 
 cover:
   # Disable the cover or not
@@ -256,7 +268,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2025
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -959,7 +971,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1031,9 +1043,25 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/readPercent.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    # - <span id="fps"></span> # 帧率检测
+
   bottom:
+    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>  
+    - <script src="/js/util.js"></script>  
+    - <script src="/js/share.js"></script>  
+    - <script src="/js/readPercent.js"></script>  
+    # - <script async src="/js/fps.js"></script> # 帧率检测
+    - <canvas id="snow"></canvas> # 雪花画布
+    - <script async src="/js/snow.js"></script> # 雪花特效
     # - <script src="xxxx"></script>
 
+local_search:
+  enable: true
 # CDN Settings
 # Don't modify the following settings unless you know how they work
 CDN:
@@ -1085,7 +1113,7 @@ CDN:
     # katex:
     # katex_copytex:
     # lazyload:
-    # local_search:
+
     # main:
     # main_css:
     # mathjax:

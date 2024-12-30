@@ -6,7 +6,8 @@ author: 枫雪
 language: zh-CN
 timezone: Asia/Shanghai
 url: https://fengxuecode.github.io/FengXueBlogs
-root: /FengXueBlogs/
+# root: /FengXueBlogs/
+root: /
 permalink_defaults: null
 pretty_urls:
   trailing_index: true
@@ -63,3 +64,7 @@ deploy:
   type: git
   repo: https://github.com/FengXueCode/FengXueBlogs.git
   branch: blogs
+search:
+  path: search.xml
+  field: post
+  content: true
