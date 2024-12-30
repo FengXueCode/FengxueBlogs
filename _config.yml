@@ -13,8 +13,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://fengxuecode.github.io/FengXueBlogs
-root: /FengXueBlogs/
+url: https://fengxuecode.github.io/FengXueCode
+root: /FengXueCode/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -102,5 +102,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/FengXueCode/FengXueBlogs.git
+  repo: https://github.com/FengXueCode/FengXueCode.git
   branch: blogs
