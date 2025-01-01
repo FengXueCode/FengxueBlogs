@@ -1043,8 +1043,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="/css/readPercent.css">
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/FengXueBlogs/css/readPercent.css">
+    - <link rel="stylesheet" href="/FengXueBlogs/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     # - <span id="fps"></span> # 帧率检测
 
@@ -1052,12 +1052,12 @@ inject:
     - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
     - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>  
-    - <script src="/js/util.js"></script>  
-    - <script src="/js/share.js"></script>  
-    - <script src="/js/readPercent.js"></script>  
+    - <script src="/FengXueBlogs/js/util.js"></script>  
+    - <script src="/FengXueBlogs/js/share.js"></script>  
+    - <script src="/FengXueBlogs/js/readPercent.js"></script>  
     # - <script async src="/js/fps.js"></script> # 帧率检测
     - <canvas id="snow"></canvas> # 雪花画布
-    - <script async src="/js/snow.js"></script> # 雪花特效
+    - <script async src="/FengXueBlogs/js/snow.js"></script> # 雪花特效
     # - <script src="xxxx"></script>
 
 local_search:
