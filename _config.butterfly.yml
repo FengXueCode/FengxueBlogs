@@ -103,7 +103,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background: /img/bg.png
+background: /FengXueBlogs/img/bg.png
 
 cover:
   # Disable the cover or not
